@@ -1,32 +1,44 @@
-Locators for Profile sub-page
+Logo ISkillo    CSS     #homeIcon
+        XPath       //*[@id="homeIcon"]
+        Full XPath  /html/body/app-root/div[1]/app-header/header/nav/div/a/img
 
-#nav-link-profile            XPath - //*[@id="nav-link-profile"]
-#nav-link-new-post		//*[@id="nav-link-new-post"]
+Link Home   CSS     #nav-link-home
+        XPath       //*[@id="nav-link-home"]
+        Full XPath  /html/body/app-root/div[1]/app-header/header/nav/div/div/ul[1]/li[1]/a
 
-//input[@id='search-bar']
+Link Login
+	CSS 	#nav-link-profile
+	XPath    //*[@id="nav-link-login"]
+
+Link Profile    CSS     #nav-link-profile
+        XPath       //*[@id="nav-link-profile"]
+        Full XPath  /html/body/app-root/div[1]/app-header/header/nav/div/div/ul[1]/li[2]/a
+
+Link New Post   CSS     #nav-link-new-post
+        XPath       //*[@id="nav-link-new-post"]
+        Full XPath  /html/body/app-root/div[1]/app-header/header/nav/div/div/ul[1]/li[3]/a
+
+Search Bar  CSS     #search-bar
+        XPath       //*[@id="search-bar"]
+        Full Xpath  /html/body/app-root/div[1]/app-header/header/nav/div/div/form/input
+
+Button      CSS     #navbarColor01 > ul.navbar-nav.my-ml.d-none.d-md-block > li > a > i
+        XPath       //*[@id="navbarColor01"]/ul[2]/li/a/i
+        Full XPath  /html/body/app-root/div[1]/app-header/header/nav/div/div/ul[2]/li/a/i
 
 
-XPath for the Logout icon
-//i[contains(@class, 'fa-search')]
-//i[contains(@class, 'fa-sign-out')]
+Search icon  XPath     //i[contains(@class, 'fa-search')]
+
+Search text field     CSS  #search-bar
+ 		      XPath       //*[@id="search-bar"]
+        	      Full Xpath  /html/body/app-root/div[1]/app-header/header/nav/div/div/form/input
+
+Logout icon  XPath  //i[contains(@class, 'fa-sign-out')]
 
 
+Image on the profile page 	CSS    div .image-container   (Note:select the class with name "image-container" inside a div element)
+Name of logged user             CSS    .profile-user-settings h2
 
-CSS path for selecting image on the profile page:
-div .image-container - select the class with name "image-container" inside a div element
-
-.profile-user-settings h2 - return the name of the logged user
-.app-edit-profile-modal h4
-
-
-
-For the picture lists:
-
-
-X-Path
-//label[contains(@class,'btn-all')]
-//label[contains(@class,'btn-public')]
-//label[contains(@class,'btn-private')]
 
 CSS, which return the count of post, followers, following:
  #followers  strong
@@ -36,24 +48,32 @@ CSS, which return the count of post, followers, following:
 .profile-stats ul li:nth-of-type(3) strong
 
 
-p> strong - return the name of login user
-.btn-group .btn-all
-.btn-group .btn-public
-.btn-group .btn-private
+X-Path for buttons
+//label[contains(@class,'btn-all')]
+//label[contains(@class,'btn-public')]
+//label[contains(@class,'btn-private')]
 
+
+CSS selector to take the first:img 1 from the available list of images:
+.app-post.ng-star-inserted:nth-of-type(1)
+
+p> strong - return the name of login user
 
 
 Locators for the form 'Modify Your Profile'
 
-//h4[text()='Modify Your Profile']
+CSS selector  for the label of the form to edit the profile:
+	  //h4[text()='Modify Your Profile']
+ 	  .profile-edit-container h4
 
- .profile-edit-container h4
+CSS selector to catch the label of each one of the field
 //label[contains(text(),'Usermame')]
 //label[contains(text(),'Email')]
 //label[contains(text(),'Password')]
 //label[contains(text(),'Confirm password')]
 
 
+CSS selector for input fields on the Profile page:
 
 input[formcontrolname = "username"].form-control  // select the text field with name "username" in class form-control
 input[formcontrolname = "email"].form-control
