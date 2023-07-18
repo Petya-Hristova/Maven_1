@@ -1,0 +1,77 @@
+Locators for Profile sub-page
+
+#nav-link-profile            XPath - //*[@id="nav-link-profile"]
+#nav-link-new-post		//*[@id="nav-link-new-post"]
+
+//input[@id='search-bar']
+
+
+XPath for the Logout icon
+//i[contains(@class, 'fa-search')]
+//i[contains(@class, 'fa-sign-out')]
+
+
+
+CSS path for selecting image on the profile page:
+div .image-container - select the class with name "image-container" inside a div element
+
+.profile-user-settings h2 - return the name of the logged user
+.app-edit-profile-modal h4
+
+
+
+For the picture lists:
+
+
+X-Path
+//label[contains(@class,'btn-all')]
+//label[contains(@class,'btn-public')]
+//label[contains(@class,'btn-private')]
+
+CSS, which return the count of post, followers, following:
+ #followers  strong
+ #following  strong
+.profile-stats ul li:nth-of-type(1) strong
+.profile-stats ul li:nth-of-type(2) strong
+.profile-stats ul li:nth-of-type(3) strong
+
+
+p> strong - return the name of login user
+.btn-group .btn-all
+.btn-group .btn-public
+.btn-group .btn-private
+
+
+
+Locators for the form 'Modify Your Profile'
+
+//h4[text()='Modify Your Profile']
+
+ .profile-edit-container h4
+//label[contains(text(),'Usermame')]
+//label[contains(text(),'Email')]
+//label[contains(text(),'Password')]
+//label[contains(text(),'Confirm password')]
+
+
+
+input[formcontrolname = "username"].form-control  // select the text field with name "username" in class form-control
+input[formcontrolname = "email"].form-control
+CSS - input[formcontrolname = "password"].form-control    - XPath - //input[@formcontrolname = 'password']
+input[formcontrolname = "confirmPassword"].form-control
+textarea[formcontrolname = "publicInfo"].form-control
+
+button[type="submit"]
+
+
+
+В Followers екрана
+.followers-modal-container h4
+.user-list-container  a.post-user  - return the name of user
+
+
+---
+p> strong - return the name of login user
+
+
+
